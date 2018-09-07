@@ -1,3 +1,12 @@
 {
-    "arduino.path": "c:\\arduino-1.8.5"
+    "arduino.path": "c:\\arduino-1.8.5",
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "files.associations": {
+        "*.java": "java",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
+    }
 }
