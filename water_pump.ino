@@ -1,6 +1,7 @@
 #include <LiquidCrystal_I2C.h>
 
 const int SENSOR1 = 2;
+const int SENSOR2 = 3;
 const int VALVE = 2;
 const unsigned long TIMEOUT = 10 * 1000;
 const unsigned long TIMEOUT_DELAY = 20 * 1000;
@@ -86,6 +87,7 @@ void timeOUT()
   {
     delay(1000);
     timeLeft = millis() - startTime;
+    readSensor();
 
     lcd.setCursor(11, 0);
     lcd.print(millsToTimeTimeout(timeLeft,TIMEOUT_DELAY));
@@ -134,6 +136,14 @@ int readSensor()
   int rawSensorData = analogRead(SENSOR1);
   int moitureInPercentage = map(rawSensorData, 320 + OFFSET, 620 + OFFSET, 100, 0);
   String sensorValue = moitureInPercentage + String("% (") + rawSensorData + String(") ");
+
+  
+  int rawSensorData2 = analogRead(SENSOR2);
+  int moitureInPercentage2 = map(rawSensorData2, 320 + OFFSET, 620 + OFFSET, 100, 0);
+  String sensorValue2 = moitureInPercentage2 + String("% (") + rawSensorData2 + String(") ");
+
+  lcd.setCursor(0, 0);
+  lcd.print(sensorValue2);
 
   lcd.setCursor(0, 1);
   //lcd.print(toLimitedString(moitureInPercentage) + String("%"));
