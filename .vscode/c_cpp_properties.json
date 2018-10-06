@@ -3,9 +3,9 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:\\Users\\Dato\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                "C:\\Users\\Dato\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\**",
-                "C:\\Users\\Dato\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C",
+                "C:\\Users\\davidd\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\davidd\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\**",
+                "C:\\Users\\davidd\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C",
                 "c:\\arduino-1.8.5\\tools\\**",
                 "c:\\arduino-1.8.5\\hardware\\arduino\\avr\\**"
             ],
