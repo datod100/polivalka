@@ -2,17 +2,95 @@
     "configurations": [
         {
             "name": "Win32",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
             "includePath": [
-                "C:\\Users\\davidd\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                "C:\\Users\\davidd\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\**",
-                "C:\\Users\\davidd\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C",
-                "c:\\arduino-1.8.5\\tools\\**",
-                "c:\\arduino-1.8.5\\hardware\\arduino\\avr\\**"
+                "${workspaceFolder}"
             ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        },
+        {
+            "name": "Arduino",
+            "brouse": {
+                "path": []
+            },
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\${env:Username}\\AppData\\Local\\Arduino15\\",
+                "C:\\Users\\${env:Username}\\Documents\\Arduino\\libraries"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
             "forcedInclude": [
                 "c:\\arduino-1.8.5\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ]
+        },
+        {
+            "name": "Arduino-avr-standart",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "C:\\arduino-1.8.5\\hardware\\arduino\\avr\\cores\\arduino",
+                    "C:\\arduino-1.8.5\\hardware\\tools\\avr\\avr\\include",
+                    "C:\\arduino-1.8.5\\hardware\\arduino\\avr\\variants\\standard",
+                    "C:\\Users\\${env:Username}\\Documents\\Arduino\\libraries"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}",
+                "C:\\arduino-1.8.5\\hardware\\arduino\\avr\\cores\\arduino",
+                "C:\\arduino-1.8.5\\hardware\\tools\\avr\\avr\\include",
+                "C:\\arduino-1.8.5\\hardware\\arduino\\avr\\variants\\standard",
+                "C:\\Users\\${env:Username}\\Documents\\Arduino\\libraries"
             ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64"
+        },
+        {
+            "name": "Arduino-esp32",
+            "includePath": [
+                "C:\\Users\\${env:Username}\\Documents\\Arduino\\hardware\\espressif\\esp32\\cores\\esp32",
+                "C:\\Users\\${env:Username}\\Documents\\Arduino\\hardware\\espressif\\esp32\\libraries",
+                "${workspaceRoot}"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "C:\\Users\\${env:Username}\\Documents\\Arduino\\hardware\\espressif\\esp32\\cores\\esp32",
+                    "C:\\Users\\${env:Username}\\Documents\\Arduino\\hardware\\espressif\\esp32\\libraries",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
         }
     ],
     "version": 4
